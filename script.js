@@ -1,13 +1,10 @@
 //your JS code here. If required.
 const changeBtn = document.getElementById('change_button');
-    const resetBtn = document.getElementById('Reset');
+    const resetBtn = document.getElementById('reset_button');
 
     function resetColors() {
       for (let i = 1; i <= 9; i++) {
-        const cell = document.getElementById(i.toString());
-        if (cell) {
-          cell.style.backgroundColor = 'transparent';
-        }
+        document.getElementById(i.toString()).style.backgroundColor = 'transparent';
       }
     }
 
